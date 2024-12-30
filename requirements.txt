@@ -1,11 +1,19 @@
-# Core dependencies
-streamlit>=1.31.0  # Latest stable version of Streamlit
-torch>=2.2.0  # PyTorch for deep learning operations
-diffusers>=0.25.0  # For running the FLUX.1 model
-transformers>=4.37.0  # Required by diffusers for text processing
-accelerate>=0.27.0  # For optimized model loading and inference
-safetensors>=0.4.2  # For efficient tensor serialization
-Pillow>=10.2.0  # For image processing operations
+# Core Application Framework
+streamlit>=1.31.0  # Web application framework for creating the user interface
 
-# Optional but recommended for improved performance
-nvidia-cuda-runtime-cu12  # For CUDA support if using NVIDIA GPU
+# Deep Learning and Model Dependencies
+torch>=2.2.0  # PyTorch for deep learning operations
+diffusers>=0.25.0  # Diffusion models framework for FLUX.1
+transformers>=4.37.0  # Hugging Face Transformers for model handling
+accelerate>=0.27.0  # Optimization for model loading and inference
+safetensors>=0.4.2  # Efficient tensor serialization
+
+# Tokenization Dependencies
+sentencepiece>=0.1.99  # Required for FLUX.1 model tokenization
+tokenizers>=0.15.0  # Fast tokenizers implementation
+
+# Image Processing
+Pillow>=10.2.0  # Python Imaging Library for image operations
+
+# Optional GPU Support
+nvidia-cuda-runtime-cu12  # CUDA support for NVIDIA GPUs
