@@ -1,0 +1,11 @@
+# Core dependencies
+streamlit>=1.31.0  # Latest stable version of Streamlit
+torch>=2.2.0  # PyTorch for deep learning operations
+diffusers>=0.25.0  # For running the FLUX.1 model
+transformers>=4.37.0  # Required by diffusers for text processing
+accelerate>=0.27.0  # For optimized model loading and inference
+safetensors>=0.4.2  # For efficient tensor serialization
+Pillow>=10.2.0  # For image processing operations
+
+# Optional but recommended for improved performance
+nvidia-cuda-runtime-cu12  # For CUDA support if using NVIDIA GPU
